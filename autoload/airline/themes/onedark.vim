@@ -32,9 +32,9 @@ function! airline#themes#onedark#refresh()
         \ 'red': [ '#E06C75', '', s:term_red, 0 ]
         \ }
 
-  let s:N1 = [ '#282C34', '#98C379', s:term_black, s:term_green ]
+  let s:N1 = [ '#1F2A3D', '#98C379', s:term_black, s:term_green ]
   let s:N2 = [ '#ABB2BF', '#3E4452', s:term_white, s:term_grey ]
-  let s:N3 = [ '#98C379', '#282C34', s:term_green, '' ]
+  let s:N3 = [ '#98C379', '#1F2A3D', s:term_green, '' ]
   let g:airline#themes#onedark#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
   let group = airline#themes#get_highlight('vimCommand')
@@ -42,25 +42,25 @@ function! airline#themes#onedark#refresh()
         \ 'airline_c': [ group[0], '', group[2], '', '' ]
         \ }
 
-  let s:I1 = [ '#282C34', '#61AFEF', s:term_black, s:term_blue ]
+  let s:I1 = [ '#1F2A3D', '#61AFEF', s:term_black, s:term_blue ]
   let s:I2 = s:N2
-  let s:I3 = [ '#61AFEF', '#282C34', s:term_blue, '' ]
+  let s:I3 = [ '#61AFEF', '#1F2A3D', s:term_blue, '' ]
   let g:airline#themes#onedark#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
   let g:airline#themes#onedark#palette.insert_modified = g:airline#themes#onedark#palette.normal_modified
 
-  let s:R1 = [ '#282C34', '#E06C75', s:term_black, s:term_red ]
+  let s:R1 = [ '#1F2A3D', '#E06C75', s:term_black, s:term_red ]
   let s:R2 = s:N2
-  let s:R3 = [ '#E06C75', '#282C34', s:term_red, '' ]
+  let s:R3 = [ '#E06C75', '#1F2A3D', s:term_red, '' ]
   let g:airline#themes#onedark#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
   let g:airline#themes#onedark#palette.replace_modified = g:airline#themes#onedark#palette.normal_modified
 
-  let s:V1 = [ '#282C34', '#C678DD', s:term_black, s:term_purple ]
+  let s:V1 = [ '#1F2A3D', '#C678DD', s:term_black, s:term_purple ]
   let s:V2 = s:N2
-  let s:V3 = [ '#C678DD', '#282C34', s:term_purple, '' ]
+  let s:V3 = [ '#C678DD', '#1F2A3D', s:term_purple, '' ]
   let g:airline#themes#onedark#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
   let g:airline#themes#onedark#palette.visual_modified = g:airline#themes#onedark#palette.normal_modified
 
-  let s:IA1 = [ '#282C34', '#ABB2BF', s:term_black, s:term_white ]
+  let s:IA1 = [ '#1F2A3D', '#ABB2BF', s:term_black, s:term_white ]
   let s:IA2 = [ '#ABB2BF', '#3E4452', s:term_white, s:term_grey ]
   let s:IA3 = s:N2
   let g:airline#themes#onedark#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
@@ -71,7 +71,7 @@ function! airline#themes#onedark#refresh()
   " Warning/Error styling code from vim-airline's ["base16" theme](https://github.com/vim-airline/vim-airline-themes/blob/master/autoload/airline/themes/base16.vim)
 
   " Warnings
-  let s:WI = [ '#282C34', '#E5C07B', s:term_black, s:term_yellow ]
+  let s:WI = [ '#1F2A3D', '#E5C07B', s:term_black, s:term_yellow ]
   let g:airline#themes#onedark#palette.normal.airline_warning = [
        \ s:WI[0], s:WI[1], s:WI[2], s:WI[3]
        \ ]
@@ -98,7 +98,7 @@ function! airline#themes#onedark#refresh()
       \ g:airline#themes#onedark#palette.normal.airline_warning
 
   " Errors
-  let s:ER = [ '#282C34', '#E06C75', s:term_black, s:term_red ]
+  let s:ER = [ '#1F2A3D', '#E06C75', s:term_black, s:term_red ]
   let g:airline#themes#onedark#palette.normal.airline_error = [
        \ s:ER[0], s:ER[1], s:ER[2], s:ER[3]
        \ ]
